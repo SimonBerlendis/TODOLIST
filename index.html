@@ -9,9 +9,11 @@
 
 <body>
 
-<img src="th-256082850.jpg"
-     alt="logo" width="237" height="161">
-<h1>Ma TODOLIST</h1>
+<header>
+    <img src="th-256082850.jpg"
+         alt="logo" width="237" height="161">
+    <h1>Ma TODOLIST</h1>
+</header>
 
 <nav>
     <h2>Menu :</h2>
@@ -25,7 +27,7 @@
     <h2>Mes tâches :</h2>
 
     <form action="index.html">
-        <select>
+        <select aria-label="Filtrer des tâches">
             <option>Toutes</option>
             <option>A faire</option>
             <option>Faites</option>
@@ -34,25 +36,19 @@
 
     <ul>
         <li>
-            <form action="index.html">
-                <input type="checkbox">
-                <label>Faire la vaisselle</label>
-                <button type="button">Supprimer</button>
-            </form>
+            <input type="checkbox" id="vaisselle">
+            <label for="vaisselle">Faire la vaisselle</label>
+            <button type="button">Supprimer</button>
         </li>
         <li>
-            <form action="index.html">
-                <input type="checkbox">
-                <label>Faire les courses</label>
-                <button type="button">Supprimer</button>
-            </form>
+            <input type="checkbox" id="course">
+            <label for="course">Faire les courses</label>
+            <button type="button">Supprimer</button>
         </li>
         <li>
-            <form action="index.html">
-                <input type="checkbox">
-                <label>Appeler Matthieu</label>
-                <button type="button">Supprimer</button>
-            </form>
+            <input type="checkbox" id="appeler">
+            <label for="appeler">Appeler Matthieu</label>
+            <button type="button">Supprimer</button>
         </li>
     </ul>
 </div>
@@ -61,7 +57,7 @@
     <h2>Ajouter une tâche :</h2>
     <form action="index.html">
         <input type="text" placeholder="Faire ...">
-        <button type="button">Ajouter</button>
+        <button type="submit">Ajouter</button>
     </form>
 </div>
 
