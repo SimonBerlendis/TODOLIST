@@ -26,31 +26,35 @@
 <div id="todo" aria-label="Section Mes tâches">
     <h2>Mes tâches :</h2>
 
-    <form action="index.html">
-        <select aria-label="Filtrer des tâches">
-            <option>Toutes</option>
-            <option>A faire</option>
-            <option>Faites</option>
-        </select>
-    </form>
+    <select aria-label="Filtrer des tâches">
+        <option>Toutes</option>
+        <option>A faire</option>
+        <option>Faites</option>
+    </select>
 
-    <ul>
-        <li>
-            <input type="checkbox" id="vaisselle">
-            <label for="vaisselle">Faire la vaisselle</label>
-            <button type="button">Supprimer</button>
-        </li>
-        <li>
-            <input type="checkbox" id="course">
-            <label for="course">Faire les courses</label>
-            <button type="button">Supprimer</button>
-        </li>
-        <li>
-            <input type="checkbox" id="appeler">
-            <label for="appeler">Appeler Matthieu</label>
-            <button type="button">Supprimer</button>
-        </li>
-    </ul>
+    <table>
+        <tr>
+            <td><input type="checkbox" id="vaisselle"></td>
+            <td><label for="vaisselle">Faire la vaisselle</label></td>
+            <td>
+                <button type="button">Supprimer</button>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="course"></td>
+            <td><label for="course">Faire les courses</label></td>
+            <td>
+                <button type="button">Supprimer</button>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="appeler"></td>
+            <td><label for="appeler">Appeler Matthieu</label></td>
+            <td>
+                <button type="button">Supprimer</button>
+            </td>
+        </tr>
+    </table>
 </div>
 
 <div id="add-task" aria-label="Section Ajouter une tâche">
