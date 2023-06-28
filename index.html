@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ma TODOLIST</title>
+    <meta name="description" content="Une superbe page html pour faire des to-do lists de la malade.">
+</head>
+
+<body>
+
+<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.mMIsqRZY-CcIfGqEmhpBrAHaFB%26pid%3DApi&f=1&ipt=8c75842e52891c5ac502a1dfa0ff32bf1e01ddaad9c7ab6a64fd7787afb72890&ipo=images"
+     alt="logo" width="237" height="161">
+<h1>Ma TODOLIST</h1>
+
+<nav>
+    <h2>Menu :</h2>
+    <ul>
+        <li><a href="#todo">Mes tâches</a></li>
+        <li><a href="#add-task">Ajouter une tâche</a></li>
+    </ul>
+</nav>
+
+<div id="todo">
+    <h2>Mes tâches :</h2>
+
+    <form action="index.html">
+        <select>
+            <option>Toutes</option>
+            <option>A faire</option>
+            <option>Faites</option>
+        </select>
+    </form>
+
+    <ul>
+        <li>
+            <form action="index.html">
+                <input type="checkbox">
+                <label>Faire la vaisselle</label>
+                <button type="button">Supprimer</button>
+            </form>
+        </li>
+        <li>
+            <form action="index.html">
+                <input type="checkbox">
+                <label>Faire les courses</label>
+                <button type="button">Supprimer</button>
+            </form>
+        </li>
+        <li>
+            <form action="index.html">
+                <input type="checkbox">
+                <label>Appeler Matthieu</label>
+                <button type="button">Supprimer</button>
+            </form>
+        </li>
+    </ul>
+</div>
+
+<div id="add-task">
+    <h2>Ajouter une tâche :</h2>
+    <form action="index.html">
+        <input type="text" placeholder="Faire ...">
+        <button type="button">Ajouter</button>
+    </form>
+</div>
+
+</body>
+</html>
